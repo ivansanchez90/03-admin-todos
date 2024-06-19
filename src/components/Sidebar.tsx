@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { CiBookmarkCheck, CiLogout } from 'react-icons/ci'
 import { SidebarItem } from './SidebarItem'
 import {
+  IoBasketOutline,
+  IoCafe,
   IoCalendarOutline,
   IoCheckboxOutline,
   IoListOutline,
@@ -23,6 +25,16 @@ const menuItems = [
     href: '/dashboard/server-todos',
     icon: <IoListOutline size={30} />,
     title: 'Server Actions',
+  },
+  {
+    href: '/dashboard/cookies',
+    icon: <IoCafe size={30} />,
+    title: 'Coockies',
+  },
+  {
+    href: '/dashboard/products',
+    icon: <IoBasketOutline size={30} />,
+    title: 'Productos',
   },
 ]
 
