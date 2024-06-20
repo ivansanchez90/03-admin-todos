@@ -31,7 +31,7 @@ export const authOptions: NextAuthConfig = {
         where: { email: token.email ?? 'no-email' },
       })
       token.roles = dbUser?.roles ?? ['no-roles']
-      token.id = dbUser?.id ?? ['no-uuid']
+      token.id = dbUser?.id ?? 'no-uuid'
       console.log(token)
 
       return token
