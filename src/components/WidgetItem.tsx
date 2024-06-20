@@ -1,6 +1,6 @@
 interface WidgetItemProps {
   title: string
-  children: React.ReactNode
+  children?: React.ReactNode
 }
 
 export const WidgetItem = ({ title, children }: WidgetItemProps) => {
